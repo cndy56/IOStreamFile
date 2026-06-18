@@ -1,0 +1,46 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package bagian3.kontak;
+
+/**
+ *
+ * @author asus
+ */
+public class Kontak {
+     // Atribut: data yang dimiliki setiap kontak
+    private String nama;
+    private String nomor;
+    private String email;
+
+    // Constructor
+    public Kontak(String nama, String nomor, String email) {
+        this.nama = nama;
+        this.nomor = nomor;
+        this.email = email;
+    }
+
+    // Getter
+    public String getNama() {
+        return nama;
+    }
+
+    public String getNomor() {
+        return nomor;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    // Mengubah objek menjadi satu baris teks untuk disimpan ke berkas
+    public String keBaris() {
+        return nama + "," + nomor + "," + email;
+    }
+
+    // Mengembalikan keterangan kontak dalam bentuk teks
+    public String info() {
+        return nama + " - " + nomor + " - " + email;
+    }
+}
